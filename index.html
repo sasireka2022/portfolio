@@ -61,7 +61,7 @@
             <h2 class="head">About <span>Me</span></h2>
 
             <div class="about_img">
-                <img src="images/homepage.png" alt="">
+                <img src="images/sasilogo.jpeg" alt="">
                 <span class="circle_spin"></span>
                 
             </div>
@@ -169,15 +169,15 @@
          <section class="contact" id="contact">
             <h2 class="head">Contact <span>Me!</span></h2>
 
-            <form action="#">
+            <form action="mailto: sasi07mani@outlook.com" method="post" id="pre">
                 <div class="input_box">
                     <div class="input_field">
-                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Full Name" id="name" required>
                         <span class="focus"></span>
                     </div>
 
                     <div class="input_field">
-                        <input type="text" placeholder="Email Address" required>
+                        <input type="text" placeholder="Email Address" id="mailAddress" required>
                         <span class="focus"></span>
                     </div>
 
@@ -185,26 +185,39 @@
 
                 <div class="input_box">
                     <div class="input_field">
-                        <input type="number" placeholder="Mobile Number" required>
+                        <input type="number" placeholder="Mobile Number" id="ph" required>
                         <span class="focus"></span>
                     </div>
 
                     <div class="input_field">
-                        <input type="text" placeholder="Email Subject" required>
+                        <input type="text" placeholder="Email Subject" id="query" required>
                         <span class="focus"></span>
                     </div>
 
                 </div>
                 <div class="textarea_field">
+                    <!-- <input type="textarea" placeholder="Your message.." required> -->
                     <textarea name="" id="info" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     <span class="text"></span>
                 </div>
                 
                 <div class="btn_box btns">
+                    <button type="button" class="btn" onclick="preivew()">Preview</button>
                     <button type="submit" class="btn">Submit</button>
                 </div>
 
             </form>
+
+            <div id="previewSection" class="preview" style="display: none;">
+                <div class="boxPreview">
+                    <p><strong>Name:</strong> <span id="nameinfo"></span></p>
+                    <p><strong>Email:</strong> <span id="mailinfo"></span></p>
+                    <p><strong>Phone:</strong> <span id="phinfo"></span></p>
+                    <p><strong>Email Subject:</strong> <span id="queryinfo"></span></p>
+                    <p><strong>Reviews:</strong> <span id="inform"></span></p>
+                </div>
+
+            </div>
 
          </section>
 
